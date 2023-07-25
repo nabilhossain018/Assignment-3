@@ -18,17 +18,18 @@
     .font-lato{
         font-family: 'Lato', sans-serif;
     }
+    
 </style>
 
 </head>
 <body class="font-lato container mx-auto">
     <!-- header  -->
-    <header>
+    <header class="my-10">
         <!-- Navbar section  -->
         <nav>
-            <div class="navbar bg-[#F85559] rounded-full">
+            <div class="navbar drop-shadow-2xl bg-white md:bg-[#F85559]  lg:bg-[#F85559] rounded-full">
                 <div class="navbar-center hidden lg:flex ">
-                    <ul class="menu menu-horizontal px-1">
+                    <ul class="menu menu-horizontal px-1 font-bold text-white ">
                       <li><a>Home</a></li>
                        
                       <li><a>About Us</a></li>
@@ -49,7 +50,7 @@
                       <li><a>All Fruits</a></li>
                     </ul>
                   </div>
-                 <div class="flex flex-nowrap"> <a class="btn btn-ghost normal-case text-xl font-bold"> <img class="w-10" src="./image/logo.png" alt=""> Fruit Burst</a></div>
+                 <div class="flex flex-nowrap"> <a class="btn btn-ghost normal-case text-xl font-bold md:text-white text-black"> <img class="w-10" src="./image/logo.png" alt=""> Fruit Burst</a></div>
                 </div>
                 
                 <div class="navbar-end relative">
@@ -60,7 +61,69 @@
         </nav>
 
     </header>
+    <!-- main  -->
     <main>
+        <!-- slider section  -->
+        <section class="my-10">
+            <div class="carousel w-full ">
+                <!-- slide - 1  -->
+                <div id="slide1" class="carousel-item relative w-full">
+                   <img src="./image/banner1.png" class="w-full " />
+                   <div class="absolute inset-0 bg-gradient-to-b from-slate-800 to-transparent"></div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slide4" class="btn btn-circle ">❮</a> 
+                      <div class="text-center space-y-5 text-white">
+                        <h1 class="font-extrabold    text-xl md:text-4xl lg:text-5xl">Fresh and Delicious Fruits <br> Delivered to Your Doorstep</h1>
+                        <p class="font-semibold lg:text-xl"> Savor the taste of nature with our hand-picked fruits</p>
+                        <button class="btn font-extrabold border-[#F85559] bg-[#F85559]  text-white">Shop Now</button>
+                    </div>
+                      <a href="#slide2" class="btn btn-circle ">❯</a>
+                    </div>
+                  </div> 
+                  <!-- slide - 2  -->
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="./image/banner2.png" class="w-full" />
+                  <div class="absolute inset-0 bg-gradient-to-b from-slate-800 to-transparent"></div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <div class="text-center space-y-5  text-white">
+                        <h1 class="font-extrabold    text-xl md:text-4xl lg:text-5xl">Nature’s Bounty at <br> Your Fingertips </h1>
+                        <p class="font-semibold lg:text-xl">Experience the goodness of fresh fruits with every bite</p>
+                        <button class="btn font-extrabold border-[#F85559] bg-[#F85559]  text-white">Shop Now</button>
+                    </div>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                  <!-- slide - 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="./image/banner3.png" class="w-full" />
+                  <div class="absolute inset-0 bg-gradient-to-b from-slate-800 to-transparent"></div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <div class="text-center space-y-5  text-white">
+                        <h1 class="font-extrabold    text-xl md:text-4xl lg:text-5xl"> Fruitful Delights <br> for Every Occasion </h1>
+                        <p class="font-semibold lg:text-xl">Celebrate life’s moments with our juicy, flavorful fruits</p>
+                        <button class="btn font-extrabold border-[#F85559] bg-[#F85559]  text-white">Shop Now</button>
+                    </div>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                  <!-- slide - 4  -->
+                  <div id="slide4" class="carousel-item relative w-full">
+                    <img src="./image/banner4.png" class="w-full" />
+                    <div class="absolute inset-0 bg-gradient-to-b from-slate-800 to-transparent"></div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slide3" class="btn btn-circle">❮</a> 
+                      <div class="text-center space-y-5  text-white">
+                          <h1 class="font-extrabold    text-xl md:text-4xl lg:text-5xl">A World of Flavor <br> in Every Bite </h1>
+                          <p class="font-semibold lg:text-xl">Discover the joy of fresh, hand-selected fruits from our shop</p>
+                          <button class="btn font-extrabold border-[#F85559] bg-[#F85559]  text-white">Shop Now</button>
+                      </div>
+                      <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                  </div> 
+              </div>
+        </section>
 
     </main>
     <footer>
