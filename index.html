@@ -42,7 +42,7 @@
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content -ml-40 mt-3 z-[1] p-2 shadow bg-[#F85559] text-white font-extrabold rounded-box w-52">
+                    <ul tabindex="0" class="menu menu-sm dropdown-content -ml-48 -mt-24  z-[1] p-2 shadow bg-[#F85559] text-white font-extrabold rounded-box w-52">
                       <li><a>Home</a></li>
                      
                       <li><a>About Us</a></li>
@@ -128,28 +128,69 @@
         <section class="grid place-items-center lg:grid-cols-6 grid-cols-2 md:grid-cols-3 drop-shadow-none lg:rounded-2xl md:place-items-center  lg:drop-shadow-2xl bg-white mx-20 gap-10 text-center lg:-mt-36">
             <div>
                 <img src="./image/fruit1.png" alt="">
-                <p class="text-xl font-bold">Red Grapes</p>
+                <p class="md:text-xl text-sm font-bold">Red Grapes</p>
             </div>
             <div>
                 <img src="./image/fruit2.png" alt="">
-                <p class="text-xl font-bold">Orange</p>
+                <p class="md:text-xl text-sm font-bold">Orange</p>
             </div>
             <div>
                 <img src="./image/fruit3.png" alt="">
-                <p class="text-xl font-bold">Mango</p>
+                <p class="md:text-xl text-sm font-bold">Mango</p>
             </div>
             <div>
                 <img src="./image/fruit4.png" alt="">
-                <p class="text-xl font-bold">Strawberry</p>
+                <p class="md:text-xl text-sm font-bold">Strawberry</p>
             </div>
             <div>
                 <img src="./image/fruit5.png" alt="">
-                <p class="text-xl font-bold">Pomegranate</p>
+                <p class="md:text-xl text-sm font-bold">Pomegranate</p>
             </div>
             <div>
                 <img src="./image/fruit9.png" alt="">
-                <p class="text-xl font-bold">Bannana</p>
+                <p class="md:text-xl text-sm font-bold">Bannana</p>
             </div>
+        </section>
+        <!-- deal the day section  -->
+        <section class="mt-40">
+          <div class="flex space-y-5 flex-col items-center text-center lg:flex-row lg:text-left">
+            <div class="flex-1">
+                <h3 class="text-3xl md:text-5xl font-bold">Deal of the day</h3>
+                <p class="font-semibold opacity-60 leading-7">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="">
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl ">
+                        <span style="--value:29;"></span>
+                      </span>
+                      Days
+                    </div> 
+                    <i class="fa-solid fa-ellipsis-vertical fa-2xl mt-6"></i>
+                    
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:15;"></span>
+                      </span>
+                      Hours
+                    </div> 
+                    <i class="fa-solid fa-ellipsis-vertical fa-2xl mt-6"></i>
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:25;"></span>
+                      </span>
+                      Minutes
+                    </div> 
+                    <i class="fa-solid fa-ellipsis-vertical fa-2xl mt-6"></i>
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:08;"></span>
+                      </span>
+                      Seconds
+                    </div>
+                  </div>
+            </div>
+          </div>
         </section>
 
     </main>
